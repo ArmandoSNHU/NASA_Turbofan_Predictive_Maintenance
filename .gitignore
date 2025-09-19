@@ -1,0 +1,35 @@
+# ---- Python ----
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.egg-info/
+.eggs/
+
+# ---- Virtual Environments ----
+.venv/
+venv/
+ENV/
+env/
+
+# ---- Jupyter Notebooks ----
+.ipynb_checkpoints/
+
+# ---- VS Code ----
+.vscode/*
+# If you want to keep interpreter settings, un-comment below:
+# !.vscode/settings.json
+
+# ---- Data & Large Files ----
+data/*
+!data/.gitkeep       # keep the folder itself, ignore files
+
+# ---- Logs / Reports ----
+*.log
+reports/*.pdf
+reports/*.docx
+
+# ---- OS cruft ----
+.DS_Store
+Thumbs.db
