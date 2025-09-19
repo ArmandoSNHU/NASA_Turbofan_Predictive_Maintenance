@@ -1,35 +1,40 @@
-# ---- Python ----
+# --- Python cache & bytecode ---
 __pycache__/
-*.pyc
+*.py[cod]
 *.pyo
 *.pyd
-*.pkl
-*.egg-info/
-.eggs/
+*$py.class
 
-# ---- Virtual Environments ----
-.venv/
+# --- Virtual environment ---
 venv/
-ENV/
-env/
+.env/
+.venv/
 
-# ---- Jupyter Notebooks ----
+# --- Jupyter ---
 .ipynb_checkpoints/
 
-# ---- VS Code ----
-.vscode/*
-# If you want to keep interpreter settings, un-comment below:
-# !.vscode/settings.json
-
-# ---- Data & Large Files ----
-data/*
-!data/.gitkeep       # keep the folder itself, ignore files
-
-# ---- Logs / Reports ----
-*.log
-reports/*.pdf
-reports/*.docx
-
-# ---- OS cruft ----
+# --- OS / Editor junk ---
 .DS_Store
 Thumbs.db
+.vscode/
+.idea/
+
+# --- Data & outputs ---
+# Ignore all data files except a small demo
+data/*
+!data/train_FD001_demo.txt
+
+# Ignore reports, models, figures
+reports/*.csv
+reports/*.joblib
+reports/*.pkl
+reports/figs/*.png
+reports/figs/*.jpg
+
+# --- Logs ---
+*.log
+
+# --- Temporary files ---
+*.tmp
+*.bak
+*.swp
